@@ -11,7 +11,6 @@ class Solution {
             }
         }
 
-        System.out.println(ans[0] + ans[1]);
         return ans;
     }
 }
