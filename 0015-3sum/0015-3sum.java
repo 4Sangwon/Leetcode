@@ -8,8 +8,7 @@ class Solution {
             int s = i+1;
             int e = nums.length-1;
             while(s < e){
-                int sum = nums[i] + nums[s] + nums[e];
-                if(sum == 0) {
+                if(nums[i] + nums[s] + nums[e] == 0) {
                     List<Integer> ilist = new ArrayList<>();
                     ilist.add(nums[i]);
                     ilist.add(nums[s]);
@@ -18,7 +17,7 @@ class Solution {
                     ans.add(ilist);
                     s++;
                 }
-                else if(sum < 0) {
+                else if(nums[i] + nums[s] + nums[e] < 0) {
                     s++;
                 }
                 else {
